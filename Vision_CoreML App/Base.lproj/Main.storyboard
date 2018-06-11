@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Vision_CoreML_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjL-Bw-slj">
+                                <rect key="frame" x="312" y="29" width="48" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="slg-ej-zXv"/>
+                                    <constraint firstAttribute="width" constant="48" id="wLv-lJ-bAd"/>
+                                </constraints>
+                                <state key="normal" title="Photos">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="photosButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UP1-6b-4kY"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zpQ-6R-eQx">
+                                <rect key="frame" x="15" y="79" width="344" height="343"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kp0-fY-180">
+                                        <rect key="frame" x="8" y="8" width="328" height="327"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.77191421220000001" green="0.79456390710000002" blue="0.81871715690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="kp0-fY-180" firstAttribute="top" secondItem="zpQ-6R-eQx" secondAttribute="top" constant="8" id="D0P-Ep-BIm"/>
+                                    <constraint firstAttribute="bottom" secondItem="kp0-fY-180" secondAttribute="bottom" constant="8" id="HEL-hf-Jgq"/>
+                                    <constraint firstAttribute="height" constant="343" id="btO-A1-Xyj"/>
+                                    <constraint firstAttribute="trailing" secondItem="kp0-fY-180" secondAttribute="trailing" constant="8" id="fle-at-Sdu"/>
+                                    <constraint firstItem="kp0-fY-180" firstAttribute="leading" secondItem="zpQ-6R-eQx" secondAttribute="leading" constant="8" id="sfd-C1-G88"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEI-tj-w7m">
+                                <rect key="frame" x="12" y="29" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="WcR-fm-W31"/>
+                                    <constraint firstAttribute="height" constant="35" id="Y3x-ed-ziG"/>
+                                </constraints>
+                                <state key="normal" image="camera"/>
+                                <connections>
+                                    <action selector="cameraButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1gS-dw-SdR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xq3-xc-32W">
+                                <rect key="frame" x="16" y="453" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ZRe-93-2KN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OjL-Bw-slj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="2bc-So-3tM"/>
+                            <constraint firstItem="kEI-tj-w7m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="BGS-yG-WOC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OjL-Bw-slj" secondAttribute="trailing" constant="15" id="CRu-dh-Hd8"/>
+                            <constraint firstItem="zpQ-6R-eQx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="IV1-fX-ZRU"/>
+                            <constraint firstItem="zpQ-6R-eQx" firstAttribute="top" secondItem="OjL-Bw-slj" secondAttribute="bottom" constant="15" id="KHo-4P-MFb"/>
+                            <constraint firstItem="Xq3-xc-32W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ciz-hn-xw8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zpQ-6R-eQx" secondAttribute="trailing" constant="16" id="eGz-5v-1ip"/>
+                            <constraint firstItem="kEI-tj-w7m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="fK0-cs-TYy"/>
+                            <constraint firstItem="Xq3-xc-32W" firstAttribute="top" secondItem="zpQ-6R-eQx" secondAttribute="bottom" constant="31" id="hIv-v5-YMc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xq3-xc-32W" secondAttribute="trailing" constant="16" id="tao-fg-c8T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="kp0-fY-180" id="gCT-ti-KTP"/>
+                        <outlet property="predictionLabel" destination="Xq3-xc-32W" id="FhH-TA-oKn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" width="25" height="25"/>
+    </resources>
+</document>
