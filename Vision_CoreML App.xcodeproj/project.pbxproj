@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4830C6E720CE748900BD4F95 /* AgeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4830C6E620CE748900BD4F95 /* AgeNet.mlmodel */; };
+		4819A09D20DA514E00F7DF01 /* AgeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4819A09C20DA514E00F7DF01 /* AgeNet.mlmodel */; };
 		48C89DCD20C904F600A0285F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C89DCC20C904F600A0285F /* AppDelegate.swift */; };
 		48C89DCF20C904F600A0285F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C89DCE20C904F600A0285F /* ViewController.swift */; };
 		48C89DD220C904F600A0285F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C89DD020C904F600A0285F /* Main.storyboard */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4830C6E620CE748900BD4F95 /* AgeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = AgeNet.mlmodel; path = ../../../Downloads/AgeNet.mlmodel; sourceTree = "<group>"; };
+		4819A09C20DA514E00F7DF01 /* AgeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = AgeNet.mlmodel; sourceTree = SOURCE_ROOT; };
 		48C89DC920C904F600A0285F /* Vision_CoreML App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vision_CoreML App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C89DCC20C904F600A0285F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48C89DCE20C904F600A0285F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 				48C89DD820C904F900A0285F /* LaunchScreen.storyboard */,
 				48C89DDB20C904F900A0285F /* Info.plist */,
 				48C89DD320C904F600A0285F /* Vision_CoreML_App.xcdatamodeld */,
-				4830C6E620CE748900BD4F95 /* AgeNet.mlmodel */,
+				4819A09C20DA514E00F7DF01 /* AgeNet.mlmodel */,
 			);
 			path = "Vision_CoreML App";
 			sourceTree = "<group>";
@@ -143,7 +143,7 @@
 			files = (
 				48C89DCF20C904F600A0285F /* ViewController.swift in Sources */,
 				48C89DCD20C904F600A0285F /* AppDelegate.swift in Sources */,
-				4830C6E720CE748900BD4F95 /* AgeNet.mlmodel in Sources */,
+				4819A09D20DA514E00F7DF01 /* AgeNet.mlmodel in Sources */,
 				48C89DD520C904F600A0285F /* Vision_CoreML_App.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
