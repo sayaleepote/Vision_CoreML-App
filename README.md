@@ -1,8 +1,8 @@
 # Vision_CoreML-App
 This app predicts the age of a person from the picture input using camera or photos gallery. <br>
-For this, the app uses <a href="https://developer.apple.com/documentation/coreml">Core ML</a> framework of iOS. The <a href="https://developer.apple.com/documentation/vision">Vision </a> library of CoreML is also used here as the trained model takes image input.<br><br>
+For this, the app uses <a href="https://developer.apple.com/documentation/coreml">Core ML</a> framework of iOS. The <a href="https://developer.apple.com/documentation/vision">Vision </a> library of CoreML is also used here as the trained model takes image input.<br>
 
-Find the complete tutorial <a href="https://saytech48.wordpress.com/2018/07/04/core-ml-with-vision-tutorial/">here</a>.<br><br>
+Find a complete tutorial <a href="https://saytech48.wordpress.com/2018/07/04/core-ml-with-vision-tutorial/">here</a>.<br>
 
 The trained model fed to the system is <a href="https://coreml.store/agenet">AgeNet</a>, which is a Age Classification model using Convolutional Neural Networks. This model takes a 277x277 image as input and predicts the age of the person and outputs the same. <br>
 
